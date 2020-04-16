@@ -24,7 +24,7 @@ print(pay_month)
 # name = input("Type your name: ")
 # name = name.strip()
 # print("Welcome " + name.title())
-
+#
 # stroka = "Gvatemala 'strana' s teplym klimatom"
 # entry1 = int(input("Введите первое число: "))
 # entry2 = int(input("Введите первое число: "))
