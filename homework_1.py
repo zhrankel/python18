@@ -1,4 +1,6 @@
 # calculate the user's age
+# author: Boris Kaiser
+
 import re
 
 age = None
