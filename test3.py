@@ -1,10 +1,14 @@
-name1 = input("Введите имя первого человека")
-name2 = input("Введите имя второго человека")
-name3 = input("Введите имя третьего человека")
+names = []
+salary = []
+amount = 0
+memberscnt = input("Enter famaly members count: ")
+mc = int(memberscnt)
+for i in range(mc):
+    names.append(input("Введите имя " + str(i + 1) + " человека: "))
 
-salary1 = input("Введите зарплату первого: ")
-salary2 = input("Введите зарплату второго: ")
-salary3 = input("Введите зарплату третьего: ")
+for i in range(mc):
+    salary.append(input("Введите зарплату " + str(i + 1) + " человека: "))
+
 
 credit = input("Input credit ammount: ")
 how_long = input("How long: ")
@@ -12,6 +16,15 @@ percent = input("Percent: ")
 pay_month = int(credit)/(12 * int(how_long)) + (int(credit)/100 * int(percent))/12
 
 print(pay_month)
+
+for sal in salary:
+    amount += int(sal)
+
+mean = (amount - pay_month)/mc
+
+for name in names:
+    print(name.title() + "может потрптить " + str(mean))
+
 # mean = str((int(salary1) + int(salary2) + int(salary3))/3)
 # print(name1 + " Может потратить: " + mean)
 # print(name2 + " Может потратить: " + mean)
