@@ -35,7 +35,7 @@ level = [12, 9, 6]
 cnt = level[int(game_type) - 1]
 
 secret = random.randint(1, 20)
-print(secret)
+#print(secret)
 if the_game(cnt, secret, cnt) == 0:
     print(f'Sorry, but you didn\'t guess. The secret number was {secret}')
 
