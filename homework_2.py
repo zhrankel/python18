@@ -11,8 +11,14 @@ def the_game(i, s, l):
             return 1
         else:
             if i >= 1:
-                print(f'He-he! Your choice is not correct, try once more again.')
-                the_game(i, s, l)
+                if int(b) > s:
+                    print(f'He-he! Your choice is not correct, the secret number is smaller than {b}. '
+                          f'Try once more again.')
+                    the_game(i, s, l)
+                else:
+                    print(f'He-he! Your choice is not correct, the secret number is bigger than {b}. '
+                          f'Try once more again.')
+                    the_game(i, s, l)
             return 0
 
 
